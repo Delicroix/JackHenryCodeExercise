@@ -3,8 +3,6 @@ using SharedLibrary.POCOs;
 using SocialOpinionAPI.Core;
 using SocialOpinionAPI.Services.SampledStream;
 using System;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
 
 namespace JackHenryCodeExercise.Service
 {
@@ -32,33 +30,6 @@ namespace JackHenryCodeExercise.Service
           {
                _streamService.DataReceivedEvent += this.DataReceivedEvent;
                _streamService.StartStream(streamAPIEndoint, maxTweets, maxConnectionAttempts);
-          }
-
-          /// <summary>
-          /// TODO: Implement map to contain 3rd party reference to wrapper
-          /// </summary>
-          /// <typeparam name="T"></typeparam>
-          /// <typeparam name="U"></typeparam>
-          /// <param name="from"></param>
-          /// <param name="to"></param>
-          /// <returns></returns>
-          public static U MapToType<T, U>(T from, U to)
-          {
-               try
-               {
-                    using (var ms = new MemoryStream())
-                    {
-                         var formatter = new BinaryFormatter();
-                         formatter.Serialize(ms, from);
-                         ms.Position = 0;
-
-                         to = (U)formatter.Deserialize(ms);
-                         return to;
-                    }
-               }
-               catch { }
-               return default(U);
-
           }
 
           public void Dispose()

@@ -16,7 +16,7 @@ I also want to note that I did all the development and debugging on my local mac
 Things I didn't get to fully implement:  
 I added SOME tests, but I wanted to build them out (especially to demostrate Mocking)  
 I ran into an issue injecting the service and ended up instanciating the instance in the function call  
-I used the Adapter pattern to wrap the 3rd party tool (SocialOpinionAPI), but had to leave one reference outside of the wrapper. To fix this, I am planning to implement a mapper (probably AutoMapper)  
+I used the Adapter pattern to wrap the 3rd party tool (SocialOpinionAPI). The event passed a type in the args that I used serialization to map to a shared type. To fix this, I am planning to implement a mapper (probably AutoMapper) in the wrapper class (probably in a convert method)  
 I will likely also implement an in-memory instance of a database using EntityFramework (and surrounding tests)  
   
   
