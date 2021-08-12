@@ -1,0 +1,2 @@
+﻿The purpose of the SharedLibrary is to not only share common functionality, but also to share Interfaces, POCOs, DTOs & Models.
+This allows for better separation and looser coupling for things such as testability.
