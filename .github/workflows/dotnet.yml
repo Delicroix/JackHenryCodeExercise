@@ -1,10 +1,10 @@
-name: .NET
+name: JackHenryCodeExercise Build
 
 on:
   push:
-    branches: [ master ]
+    branches: [ dev ]
   pull_request:
-    branches: [ master ]
+    branches: [ dev ]
 
 jobs:
   build:
@@ -19,6 +19,9 @@ jobs:
         dotnet-version: 3.1.x
     - name: Restore dependencies
       run: dotnet restore
+    - name: Install dependencies
+      run: dotnet restore
+      working-directory: JackHenryCodeExercise/JackHenryCodeExercise.sln
     - name: Build
       run: dotnet build --no-restore
     - name: Test
