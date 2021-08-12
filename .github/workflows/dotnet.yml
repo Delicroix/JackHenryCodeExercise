@@ -1,4 +1,4 @@
-name: JackHenryCodeExercise Build
+name: JackHenryCodeExercise Dev Build
 
 on:
   push:
