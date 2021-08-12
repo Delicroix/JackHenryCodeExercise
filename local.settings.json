@@ -1,0 +1,16 @@
+{
+  "ConfigurationSettings": {
+    "StreamAPIEndoint": "https://api.twitter.com/2/tweets/sample/stream?tweet.fields=entities,public_metrics&expansions=attachments.media_keys&user.fields=created_at&media.fields=preview_image_url,type,url",
+    "MaxTweets": "50",
+    "MaxConnectionAttempts": "5",
+    "DisplayFullTweetInLog": true
+  },
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "AzureWebJobsSecretStorageType": "Files",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "ASPNETCORE_ENVIRONMENT": "Development",
+    "AzureKeyVaultEndpoint": ""
+  }
+}
