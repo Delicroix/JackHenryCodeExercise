@@ -21,7 +21,7 @@ jobs:
       run: dotnet restore
     - name: Install dependencies
       run: dotnet restore
-      working-directory: JackHenryCodeExercise/
+      working-directory: JackHenryCodeExercise/JackHenryCodeExercise/
     - name: Build
       run: dotnet build JackHenryCodeExercise.sln --no-restore
     - name: Test
