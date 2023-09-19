@@ -1,7 +1,7 @@
 {
   "ConfigurationSettings": {
     "StreamAPIEndoint": "https://api.twitter.com/2/tweets/sample/stream?tweet.fields=entities,public_metrics&expansions=attachments.media_keys&user.fields=created_at&media.fields=preview_image_url,type,url",
-    "MaxTweets": "50",
+    "MaxTweets": "500",
     "MaxConnectionAttempts": "5",
     "DisplayFullTweetInLog": true,
     "PictureIdentifier": "pic.twitter.com"
